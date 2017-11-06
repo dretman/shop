@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="base" template="/WEB-INF/layout/base/page.jsp">
+        <put-attribute name="header" value="/WEB-INF/layout/base/header.jsp"/>
+        <put-attribute name="navigator" value="/WEB-INF/layout/base/navigator.jsp"/>
+        <put-attribute name="gallery" value="/WEB-INF/layout/base/gallery.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/layout/base/footer.jsp"/>
+    </definition>
+    <definition name="home" extends="base">
+        <put-attribute name="body" value="/WEB-INF/layout/home.jsp"/>
+    </definition>
+    <definition name="upload" extends="base">
+        <put-attribute name="body" value="/WEB-INF/layout/upload.jsp"/>
+    </definition>
+    <definition name="details" extends="base">
+        <put-attribute name="body" value="/WEB-INF/layout/details.jsp"/>
+    </definition>
+    <definition name="denied" extends="base">
+        <put-attribute name="body" value="/WEB-INF/layout/denied.jsp"/>
+    </definition>
+    <definition name="loginPage" template="/WEB-INF/layout/loginPage.jsp"/>
+    <definition name="404" template="/WEB-INF/layout/404.jsp"/>
+    <definition name="error" template="/WEB-INF/layout/error.jsp"/>
+</tiles-definitions>

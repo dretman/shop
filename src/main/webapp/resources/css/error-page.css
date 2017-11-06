@@ -1,0 +1,13 @@
+div {
+    color: grey;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -285px;
+    margin-top: -190px;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+}
